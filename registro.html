@@ -7,18 +7,113 @@
 </head>
 <body>
 	<h2>Formularios</h2>
-	<br>	
-	<label for="nombre">Nombre
-	<input id="nombre" placeholder="Escribe tu nombre" maxlength="10" type="text">
-	</label>
 	<br>
-	<label for="nombr">Esto es para dejar un valor sin modificar
-	<input id="nombr" value="Carlos" maxlength="10" type="text" readonly>
-	</label>
+	<form action="#">
+		<input type="hidden" value="23456" name="">
+		<fieldset>	
+		<legend>primera parte</legend>
+		<label for="nombre">Nombre
+		<input id="nombre" placeholder="Escribe tu nombre" maxlength="10" type="text">
+		</label>
+		<br>
+		<label for="nombr">Esto es para dejar un valor sin modificar
+		<input id="nombr" value="Carlos" maxlength="10" type="text" readonly>
+		</label>
+		<br>
+		<label for="nomb">Esto es para deshabilitar
+		<input id="nombr" value="Carlos" maxlength="10" type="text" disabled>
+		</label>
+		<br>
+		<label for="edad">Edad
+		<input id="edad" type="range" min="18" max="28" step="1">
+		</label>
+		<br>
+		<label for="Tiempo_en_la_empresa">Edad
+		<input id="Tiempo_en_la_empresa" type="number" min="1" max="10" step="2">
+		</label>
+		<br>
+		<label for="clave">Ingrese la Contraseña
+		<input id="clave" type="password">
+		</label>
+
+		<br>
+		<label for="fecha">Año de macimiento
+		<input id="fecha" type="date" value="" min="2021-01-30">
+		</label>
+		<br>
+		<input type="file">
+		<br>
+		<input type="file" multiple>
+		<br>
+		<input type="color">
+		<br>
+		<input type="email">
+		</fieldset>
+		<input type="button" value="Enviar" name="">
+		<input type="submit" value="Este envia todo de una">
+		<input type="reset" name="Borra el formulario">
+	</form>
+	<fieldset>
+		<legend>parte dos</legend>
+		<select name="" id="">
+			<option value="1">Medellín</option>
+			<option value="2">Bogota</option>
+			<option value="3">Cali</option>
+			<option value="4">Barranquilla</option>
+		</select><br>
+		<label for="">
+			Casado 
+			<input type="radio" name="estado_civil">
+		</label>
+
+		<label for="">
+			Soltero 
+			<input type="radio" name="estado_civil" checked>
+		</label>
+
+		<label for="">
+			Viudo 
+			<input type="radio" name="estado_civil">
+		</label>
+
+		<label for="">
+			Divorciado
+			<input type="radio" name="estado_civil">
+		</label><br>
+
+		<label for="">
+			<input type="checkbox" name="estado_civil">
+			Dibujar
+		</label><br>
+		<label for="">
+			<input type="checkbox" name="estado_civil">
+			Cantar
+		</label><br>
+		<label for="">
+			<input type="checkbox" name="estado_civil">
+			Bailar
+		</label><br>
+		<label for="">
+			<input type="checkbox" name="estado_civil">
+			Escuchar Música
+		</label><br>
+		<textarea></textarea>
+	</fieldset>
 	<br>
-	<label for="nomb">Esto es para deshabilitar
-	<input id="nombr" value="Carlos" maxlength="10" type="text" disabled>
+	<label>
+		Ciudad
+		<input type="text" name="ciudad" list="lista_ciudades">
 	</label>
+	<datalist id="lista_ciudades">
+		<option value="Medallo Mijo">Medellin</option>
+		<option value="Montería">Montería</option>
+		<option value="Manuare">Manaure</option>
+		<option value="">Bogota</option>
+		<option value="">Cali</option>
+		<option value="">Barranquilla</option>
+	</datalist>
+
+
 	<a href="index.html">Regresar</a>
 </body>
 </html>
